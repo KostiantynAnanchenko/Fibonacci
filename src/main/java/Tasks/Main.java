@@ -7,6 +7,8 @@ public class Main {
         System.out.println(dynamicFibonacci(6));
 
     }
+    //Часова складність: O(n).
+    //Просторова складність:O(1)
     public static int iterativeFibonacci(int n) {
         if (n <= 1)
             return n;
@@ -23,12 +25,16 @@ public class Main {
         return fib;
     }
 
+    //Часова складність:  O(2^n).
+    //Просторова складність:O(n)
     public static int recursiveFibonacci(int n) {
         if (n <= 1)
             return n;
         return recursiveFibonacci(n - 1) + recursiveFibonacci(n - 2);
     }
 
+    //Часова складність: O(n).
+    //Просторова складність:O(n)
     public static int dynamicFibonacci(int n) {
         int[] fibArr = new int[n + 2];
         fibArr[0] = 0;
